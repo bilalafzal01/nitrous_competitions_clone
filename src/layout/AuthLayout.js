@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Layout } from "antd";
-
+import LargeHeader from "../components/Header";
 const { Header, Footer, Sider, Content } = Layout;
 
 function AuthLayout(props) {
@@ -8,7 +8,9 @@ function AuthLayout(props) {
 
   return (
     <Layout>
-      <Header>Header</Header>
+      <Header>
+        <LargeHeader />
+      </Header>
       <Content>{children}</Content>
       <Footer>Footer</Footer>
     </Layout>
