@@ -1,10 +1,10 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useRouteMatch } from "react-router-dom";
 import { ICOLOR } from "../../constants";
 import styled from "styled-components";
 
 const Root = styled.div`
-  padding: 0 20px;
+  padding: 0 20px 7px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,10 @@ const Root = styled.div`
     font-family: "Inter-Medium";
     line-height: 19px;
   }
+
+  &.active {
+    border-bottom: 3px solid ${ICOLOR.orange};
+  }
 `;
 
 const NavItem = (props) => {
@@ -24,7 +28,11 @@ const NavItem = (props) => {
   const history = useHistory();
 
   return (
-    <Root key={id} onClick={() => history.push(link)}>
+    <Root
+      key={id}
+      onClick={() => history.push(link)}
+      className={window.location.pathname === link ? "active" : ""}
+    >
       <span>{label}</span>
     </Root>
   );
