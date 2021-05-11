@@ -13,6 +13,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 47px;
+  height: 110px;
 `;
 
 const Left = styled.div``;

@@ -36,10 +36,13 @@ export const NAVS = [
 ];
 
 export const ICOLOR = {
-  white: "#fff",
+  white: "#ffffff",
   dark: "#262626",
   borderColor: "#D9D9E9",
   orange: "#FF6600",
   darkBackground: "#121111",
   textLight: "#CAD0D9",
+  textGray: "#626262",
+  headingLight: "#F7F7F7",
+  inputDarkBG: "#1E1C1C",
 };

@@ -53,3 +53,17 @@
     font-weight: normal;
     src: url('../fonts/Poppins-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
