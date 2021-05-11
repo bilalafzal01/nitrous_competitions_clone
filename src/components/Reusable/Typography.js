@@ -36,7 +36,14 @@ const CustomH4 = styled.h4`
   color: ${({ color }) => color};
 `;
 
-const CustomH5 = styled.h5``;
+const CustomH5 = styled.h5`
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  line-height: 30px;
+  font-size: ${({ fontsize }) => (fontsize ? fontsize : "16px")};
+  margin-top: ${({ margintop }) => (margintop ? margintop : 0)};
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
+`;
 
 const CustomH6 = styled.h6``;
 

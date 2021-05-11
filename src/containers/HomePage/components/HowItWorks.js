@@ -1,7 +1,7 @@
 import { Col } from "antd";
 import React from "react";
 import styled from "styled-components";
-import { CustomH2 } from "../../../components/Reusable/Typography";
+import { CustomH2, CustomH5 } from "../../../components/Reusable/Typography";
 import { CustomRow } from "../../../components/Reusable/Utilities";
 import { ICOLOR } from "../../../constants";
 import howItWorks from "../../../constants/howItWorks";
@@ -36,15 +36,6 @@ const CardBody = styled.div`
   }
 `;
 
-const Title = styled.h5`
-  font-family: "Poppins-Bold";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  margin-top: 14px;
-  margin-bottom: 9px;
-`;
-
 const HowItWorksCard = ({ item }) => {
   return (
     <CardRoot>
@@ -53,7 +44,9 @@ const HowItWorksCard = ({ item }) => {
           alt=""
           src={require(`../../../assets/images/icons/${item.icon}`).default}
         />
-        <Title>{item.title}</Title>
+        <CustomH5 marginbottom="9px" margintop="14px" fontsize="18px">
+          {item.title}
+        </CustomH5>
         <p>{item.description}</p>
       </CardBody>
     </CardRoot>
