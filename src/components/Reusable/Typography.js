@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ICOLOR } from "../../constants";
 
 const CustomH1 = styled.h1`
   font-family: "Poppins-Bold";
@@ -45,6 +46,15 @@ const CustomPara = styled.p`
   line-height: 26px;
 `;
 
+const AboutPagePara = styled.p`
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
+
+  color: ${ICOLOR.textLightGray};
+`;
+
 export {
   CustomH1,
   CustomH2,
@@ -53,4 +63,5 @@ export {
   CustomH5,
   CustomH6,
   CustomPara,
+  AboutPagePara,
 };
