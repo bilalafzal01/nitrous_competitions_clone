@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { CustomRow } from "../../components/Reusable/Utilities";
 import CharityPartners from "./components/CharityPartners";
 import HomeJumbotron from "./components/HomeJumbotron";
+import HowItWorks from "./components/HowItWorks";
 import PrizeWinners from "./components/PrizeWinners";
 import WeeklyGames from "./components/WeeklyGames";
 
@@ -38,7 +39,9 @@ function HomePage() {
       </CustomRow>
       {/* How it works */}
       <CustomRow>
-        <Col span={24}></Col>
+        <Col span={24}>
+          <HowItWorks />
+        </Col>
       </CustomRow>
       {/* Reviews */}
       <CustomRow>

@@ -43,7 +43,7 @@ const InfoDiv = styled.div`
     margin-bottom: 4px;
   }
   p.winnerName {
-    font-family: "Poppins-SemiBold";
+    font-family: "Poppins-Bold";
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
