@@ -24,6 +24,11 @@ export const NAVS = [
     link: "/winner",
   },
   {
+    id: "id-shop",
+    label: "Shop",
+    link: "/shop",
+  },
+  {
     id: "id-about-us",
     label: "About Us",
     link: "/about",
@@ -48,4 +53,5 @@ export const ICOLOR = {
   headingLight: "#F7F7F7",
   inputDarkBG: "#1E1C1C",
   grayBackground: "#EFEFEF",
+  linenBackground: "#FFF7F1",
 };

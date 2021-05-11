@@ -2,15 +2,15 @@ import React, { lazy } from "react";
 import { Switch, Route } from "react-router-dom";
 import { useRouteMatch } from "react-router-dom/cjs/react-router-dom.min";
 
-const HomePage = lazy(() => import("../../containers/HomePage"));
+const AboutPage = lazy(() => import("../../containers/AboutPage"));
 
-const HomeRoutes = () => {
+const AbourRoutes = () => {
   const { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={path} component={HomePage} />
+      <Route exact path={path} component={AboutPage} />
     </Switch>
   );
 };
 
-export default HomeRoutes;
+export default AbourRoutes;

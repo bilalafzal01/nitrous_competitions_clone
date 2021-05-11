@@ -4,6 +4,8 @@ const CustomH1 = styled.h1`
   font-family: "Poppins-Bold";
   font-size: 60px;
   line-height: 72px;
+  text-transform: ${({ textTransform }) =>
+    textTransform ? textTransform : "inherit"};
   margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
   color: ${({ color }) => color};
 `;

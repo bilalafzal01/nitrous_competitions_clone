@@ -4,6 +4,7 @@ import { Spin } from "antd";
 import { Switch, Route, Redirect } from "react-router-dom";
 import AuthLayout from "../../layout/AuthLayout";
 import Home from "./home";
+import About from "./about";
 
 const FrontendRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const FrontendRoutes = () => {
         >
           {/* routes here */}
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
         </Suspense>
       </Switch>
     </AuthLayout>
