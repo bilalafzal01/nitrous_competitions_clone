@@ -39,6 +39,7 @@ export const ICOLOR = {
   white: "#ffffff",
   dark: "#262626",
   borderColor: "#D9D9E9",
+  lightGrayBorder: "#F6F6F6",
   orange: "#FF6600",
   darkBackground: "#121111",
   textLight: "#CAD0D9",

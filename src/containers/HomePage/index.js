@@ -2,6 +2,7 @@ import { Col } from "antd";
 import React from "react";
 import styled from "styled-components";
 import { CustomRow } from "../../components/Reusable/Utilities";
+import CharityPartners from "./components/CharityPartners";
 import HomeJumbotron from "./components/HomeJumbotron";
 import WeeklyGames from "./components/WeeklyGames";
 
@@ -24,7 +25,9 @@ function HomePage() {
       </CustomRow>
       {/* Charity Partners */}
       <CustomRow>
-        <Col span={24}></Col>
+        <Col span={24}>
+          <CharityPartners />
+        </Col>
       </CustomRow>
       {/* Prize Winners */}
       <CustomRow>

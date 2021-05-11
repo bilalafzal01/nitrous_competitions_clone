@@ -4,6 +4,7 @@ const CustomH1 = styled.h1`
   font-family: "Poppins-Bold";
   font-size: 60px;
   line-height: 72px;
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
   color: ${({ color }) => color};
 `;
 
@@ -12,6 +13,7 @@ const CustomH2 = styled.h2`
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
   color: ${({ color }) => color};
 `;
 
@@ -19,6 +21,7 @@ const CustomH3 = styled.h3`
   font-family: "Poppins-Bold";
   font-size: 26px;
   line-height: 39px;
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
   color: ${({ color }) => color};
 `;
 
@@ -26,6 +29,7 @@ const CustomH4 = styled.h4`
   font-family: "Poppins-Bold";
   font-size: 18px;
   line-height: 27px;
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
   color: ${({ color }) => color};
 `;
 
@@ -35,6 +39,7 @@ const CustomH6 = styled.h6``;
 
 const CustomPara = styled.p`
   font-family: "Poppins-Regular";
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
   line-height: 26px;
 `;
 

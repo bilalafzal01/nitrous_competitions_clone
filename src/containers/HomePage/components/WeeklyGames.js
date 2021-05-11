@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
 import { CustomH2 } from "../../../components/Reusable/Typography";
@@ -9,7 +9,7 @@ import WeeklyDealCard from "./WeeklyDealCard";
 
 const Root = styled.div`
   background-color: ${ICOLOR.white};
-  padding: 163px 290px;
+  padding: 163px 290px 116px 290px;
 `;
 
 const TitleDiv = styled.div`
@@ -32,6 +32,35 @@ const CustomSelect = styled.div`
   height: 48px;
   align-items: center;
   cursor: pointer;
+`;
+
+const LoadMoreButtonDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const LoadMoreButton = styled(Button)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 70px;
+  background-color: ${ICOLOR.grayBackground};
+  color: ${ICOLOR.orange};
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  span {
+    line-height: 27px;
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Poppins-SemiBold";
+  }
+  &:hover {
+    background-color: ${ICOLOR.grayBackground}90;
+    color: ${ICOLOR.orange};
+  }
 `;
 
 function WeeklyGames() {
@@ -60,13 +89,29 @@ function WeeklyGames() {
         </Col>
       </CustomRow>
       {/* Cards Row */}
-      <Row gutter={[20, 20]}>
+      <CustomRow marginbottom="77px" gutter={[20, 20]}>
         {weeklyDealsCards.map((item) => (
           <Col xl={12} key={item.id}>
             <WeeklyDealCard item={item} />
           </Col>
         ))}
-      </Row>
+      </CustomRow>
+      {/* Load more button */}
+      <CustomRow>
+        <Col span={24}>
+          <LoadMoreButtonDiv>
+            <LoadMoreButton>
+              <img
+                src={
+                  require("../../../assets/images/icons/loadIcon.png").default
+                }
+                alt=""
+              />
+              <span>Load More</span>
+            </LoadMoreButton>
+          </LoadMoreButtonDiv>
+        </Col>
+      </CustomRow>
     </Root>
   );
 }
