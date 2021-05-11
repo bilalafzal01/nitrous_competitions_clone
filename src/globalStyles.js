@@ -3,12 +3,17 @@ import { SIZE } from "./constants";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+    *,*::after,*::before{
+        margin: 0;
+        padding: 0;
+    }
     div {
         box-sizing: border-box;
     }
+    
     body{
         font-family: "Poppins-Regular";
-        background-color: "#e7e7e7";
+        background-color: "#111";
     }
 `;
 

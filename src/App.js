@@ -5,6 +5,8 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import { hot } from "react-hot-loader/root";
+
 import { Helmet } from "react-helmet";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import "./assets/css/style.css";
@@ -37,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(App);
