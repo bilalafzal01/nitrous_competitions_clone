@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { CustomRow } from "../../components/Reusable/Utilities";
 import HomeJumbotron from "./components/HomeJumbotron";
+import WeeklyGames from "./components/WeeklyGames";
 
 const Root = styled.div``;
 
@@ -17,7 +18,9 @@ function HomePage() {
       </CustomRow>
       {/* Weekly Games */}
       <CustomRow>
-        <Col span={24}></Col>
+        <Col span={24}>
+          <WeeklyGames />
+        </Col>
       </CustomRow>
       {/* Charity Partners */}
       <CustomRow>
