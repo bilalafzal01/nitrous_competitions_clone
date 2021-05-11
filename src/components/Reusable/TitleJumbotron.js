@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { CustomH1 } from "../../../components/Reusable/Typography";
-import { ICOLOR } from "../../../constants";
+import { ICOLOR } from "../../constants";
+import { CustomH1 } from "./Typography";
 
 const Root = styled.div`
   display: flex;
@@ -11,12 +11,12 @@ const Root = styled.div`
   background-color: ${ICOLOR.linenBackground};
 `;
 
-function AboutJumbotron() {
+function TitleJumbotron({ title }) {
   return (
     <Root>
-      <CustomH1 textTransform="uppercase">About Us</CustomH1>
+      <CustomH1 textTransform="uppercase">{title}</CustomH1>
     </Root>
   );
 }
 
-export default AboutJumbotron;
+export default TitleJumbotron;

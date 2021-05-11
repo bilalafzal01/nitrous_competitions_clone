@@ -1,9 +1,10 @@
 import { Col } from "antd";
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
+import TitleJumbotron from "../../components/Reusable/TitleJumbotron";
 import { CustomRow } from "../../components/Reusable/Utilities";
 import { ICOLOR } from "../../constants";
-import AboutJumbotron from "./components/AboutJumbotron";
 import Charities from "./components/Charities";
 import OnlineCompetitions from "./components/OnlineCompetitions";
 import OurMission from "./components/OurMission";
@@ -19,10 +20,13 @@ const PaddedContent = styled.div`
 function AboutPage() {
   return (
     <Root>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       {/* about us jumbotron */}
       <CustomRow>
         <Col span={24}>
-          <AboutJumbotron />
+          <TitleJumbotron title="About Us" />
         </Col>
       </CustomRow>
       {/* padded content */}

@@ -45,7 +45,14 @@ const CustomH5 = styled.h5`
   margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
 `;
 
-const CustomH6 = styled.h6``;
+const CustomH6 = styled.h6`
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  line-height: 22px;
+  font-size: ${({ fontsize }) => (fontsize ? fontsize : "16px")};
+  margin-top: ${({ margintop }) => (margintop ? margintop : 0)};
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
+`;
 
 const CustomPara = styled.p`
   font-family: "Poppins-Regular";
