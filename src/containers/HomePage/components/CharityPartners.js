@@ -17,6 +17,7 @@ const TitleDiv = styled.div`
   flex-direction: column;
   align-items: center;
   p {
+    font-size: 16px;
     color: ${ICOLOR.textLightGray};
   }
 `;

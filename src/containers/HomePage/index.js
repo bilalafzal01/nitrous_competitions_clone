@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { CustomRow } from "../../components/Reusable/Utilities";
 import CharityPartners from "./components/CharityPartners";
 import HomeJumbotron from "./components/HomeJumbotron";
+import PrizeWinners from "./components/PrizeWinners";
 import WeeklyGames from "./components/WeeklyGames";
 
 const Root = styled.div``;
@@ -31,7 +32,9 @@ function HomePage() {
       </CustomRow>
       {/* Prize Winners */}
       <CustomRow>
-        <Col span={24}></Col>
+        <Col span={24}>
+          <PrizeWinners />
+        </Col>
       </CustomRow>
       {/* How it works */}
       <CustomRow>

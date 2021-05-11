@@ -19,6 +19,7 @@ const TitleDiv = styled.div`
 
 const Left = styled.div`
   p {
+    font-size: 16px;
     color: ${ICOLOR.textLightGray};
   }
 `;

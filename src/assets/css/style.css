@@ -94,3 +94,19 @@ select {
     height: 800px;
     padding: 173px 287px;
 }
+
+.topBanner {
+    background-image: url("../../assets/images/icons/cardBanner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* top: -10px; */
+
+}
+
+.winnerTickerNumber {
+    background-image: url("../../assets/images/icons/cardTicketNumber.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 11px 27px;
+}
