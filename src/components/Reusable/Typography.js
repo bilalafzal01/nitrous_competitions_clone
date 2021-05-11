@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-const CustomH1 = styled.h1``;
+const CustomH1 = styled.h1`
+  font-family: "Poppins-Bold";
+  font-size: 60px;
+  line-height: 72px;
+  color: ${({ color }) => color};
+`;
 
 const CustomH2 = styled.h2``;
 

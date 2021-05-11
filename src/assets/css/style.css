@@ -67,3 +67,12 @@
     font-weight: 700;
     src: url('../fonts/Poppins-Bold.ttf');
 }
+
+/* *    Home page MAIN div  */
+.homeMain {
+    background-image: url("../../assets/images/home/home1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    padding: 173px 287px;
+}
