@@ -46,4 +46,5 @@ export const ICOLOR = {
   textLightGray: "#70717B",
   headingLight: "#F7F7F7",
   inputDarkBG: "#1E1C1C",
+  grayBackground: "#EFEFEF",
 };

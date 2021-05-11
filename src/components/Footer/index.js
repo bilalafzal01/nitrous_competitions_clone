@@ -176,26 +176,30 @@ function CustomFooter() {
         <CustomRow marginbottom="36px">
           <Col span={24} className="center">
             <PaymentImagesDiv>
-              <Image
+              <img
                 preview={false}
+                alt=""
                 src={require("../../assets/images/icons/visa.svg").default}
               />
-              <Image
+              <img
                 preview={false}
+                alt=""
                 src={
                   require("../../assets/images/icons/mastercard.svg").default
                 }
               />
-              <Image
+              <img
                 preview={false}
+                alt=""
                 src={require("../../assets/images/icons/amex.png").default}
               />
-              <Image
+              <img
                 preview={false}
+                alt=""
                 src={require("../../assets/images/icons/applePay.png").default}
               />
-              <Image
-                preview={false}
+              <img
+                alt=""
                 src={require("../../assets/images/icons/gPay.png").default}
               />
             </PaymentImagesDiv>
@@ -221,8 +225,8 @@ function CustomFooter() {
           <Col span={24} className="center">
             <SocialLinksDiv>
               <Link to="#">
-                <Image
-                  preview={false}
+                <img
+                  alt=""
                   src={
                     require("../../assets/images/icons/facebookIcon.png")
                       .default
@@ -230,16 +234,16 @@ function CustomFooter() {
                 />
               </Link>
               <Link to="#">
-                <Image
-                  preview={false}
+                <img
+                  alt=""
                   src={
                     require("../../assets/images/icons/twitterIcon.png").default
                   }
                 />
               </Link>
               <Link to="#">
-                <Image
-                  preview={false}
+                <img
+                  alt=""
                   src={
                     require("../../assets/images/icons/linkedinIcon.png")
                       .default
@@ -247,8 +251,8 @@ function CustomFooter() {
                 />
               </Link>
               <Link to="#">
-                <Image
-                  preview={false}
+                <img
+                  alt=""
                   src={
                     require("../../assets/images/icons/youtubeIcon.png").default
                   }
@@ -263,11 +267,11 @@ function CustomFooter() {
         {/* title + shiftcrowd logo */}
         <BottomLeft>
           <span> Nitrous Competitions Ltd - </span>
-          <Image
-            preview={false}
+          <img
             src={
               require("../../assets/images/icons/footerShiftcrowd.png").default
             }
+            alt=""
           />
         </BottomLeft>
         {/* links */}

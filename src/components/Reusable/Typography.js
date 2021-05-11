@@ -7,7 +7,13 @@ const CustomH1 = styled.h1`
   color: ${({ color }) => color};
 `;
 
-const CustomH2 = styled.h2``;
+const CustomH2 = styled.h2`
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: ${({ color }) => color};
+`;
 
 const CustomH3 = styled.h3`
   font-family: "Poppins-Bold";

@@ -9,9 +9,7 @@ function AuthLayout(props) {
 
   return (
     <Layout>
-      <Header>
-        <LargeHeader />
-      </Header>
+      <LargeHeader />
       <Content>{children}</Content>
       <CustomFooter />
     </Layout>

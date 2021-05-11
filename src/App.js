@@ -9,6 +9,7 @@ import { hot } from "react-hot-loader/root";
 
 import { Helmet } from "react-helmet";
 import { Provider, useDispatch, useSelector } from "react-redux";
+import "antd/dist/antd.css";
 import "./assets/css/style.css";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./globalStyles";

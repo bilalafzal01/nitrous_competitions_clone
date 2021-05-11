@@ -1,13 +1,15 @@
-import { Col, Image, Select } from "antd";
-import { Option } from "antd/lib/mentions";
+import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
+import { CustomH2 } from "../../../components/Reusable/Typography";
 import { CustomRow } from "../../../components/Reusable/Utilities";
 import { ICOLOR } from "../../../constants";
+import weeklyDealsCards from "../../../constants/weeklyDealsCards";
+import WeeklyDealCard from "./WeeklyDealCard";
 
 const Root = styled.div`
   background-color: ${ICOLOR.white};
-  padding: 290px;
+  padding: 163px 290px;
 `;
 
 const TitleDiv = styled.div`
@@ -15,7 +17,11 @@ const TitleDiv = styled.div`
   justify-content: space-between;
 `;
 
-const Left = styled.div``;
+const Left = styled.div`
+  p {
+    color: ${ICOLOR.textLightGray};
+  }
+`;
 
 const CustomSelect = styled.div`
   border: 1px solid ${ICOLOR.borderColor};
@@ -35,7 +41,10 @@ function WeeklyGames() {
       <CustomRow marginbottom="59px">
         <Col span={24}>
           <TitleDiv>
-            <Left></Left>
+            <Left>
+              <CustomH2>Weekly Games</CustomH2>
+              <p>New dream prizes added daily - be sure to watch this space!</p>
+            </Left>
             <CustomSelect>
               <img
                 alt=""
@@ -51,6 +60,13 @@ function WeeklyGames() {
         </Col>
       </CustomRow>
       {/* Cards Row */}
+      <Row gutter={[16, 16]}>
+        {weeklyDealsCards.map((item) => (
+          <Col xl={12} key={item.id}>
+            <WeeklyDealCard item={item} />
+          </Col>
+        ))}
+      </Row>
     </Root>
   );
 }

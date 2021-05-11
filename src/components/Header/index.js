@@ -6,7 +6,9 @@ import { ICOLOR, NAVS } from "../../constants";
 import { CustomButton } from "../Reusable/Buttons";
 import NavItem from "./NavItem";
 
-const Root = styled.div``;
+const Root = styled.div`
+  background-color: ${ICOLOR.white};
+`;
 
 const Container = styled.div`
   display: flex;
