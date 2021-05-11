@@ -60,7 +60,7 @@ function WeeklyGames() {
         </Col>
       </CustomRow>
       {/* Cards Row */}
-      <Row gutter={[16, 16]}>
+      <Row gutter={[20, 20]}>
         {weeklyDealsCards.map((item) => (
           <Col xl={12} key={item.id}>
             <WeeklyDealCard item={item} />

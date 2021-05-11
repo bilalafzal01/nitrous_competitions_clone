@@ -1,4 +1,4 @@
-import { Button, Col, Image } from "antd";
+import { Col, Image } from "antd";
 import React from "react";
 import styled from "styled-components";
 import { CustomButton } from "../../../components/Reusable/Buttons";
@@ -13,10 +13,17 @@ const Root = styled.div`
 const ImageCol = styled(Col)`
   display: flex;
   justify-content: flex-end;
+
+  img {
+  }
 `;
 
 const ContentCol = styled(Col)`
   padding: 30px;
+
+  h3 {
+    font-size: 24px;
+  }
 `;
 
 const WorthPrice = styled.p`
@@ -164,7 +171,7 @@ function WeeklyDealCard({ item }) {
           <CustomRow marginbottom="18px">
             <Col span={24}>
               <PriceDiv>
-                <span className="price">£5.00 </span>
+                <span className="price">£{item.price} </span>
                 <span>Per Ticket</span>
               </PriceDiv>
             </Col>
@@ -185,7 +192,9 @@ function WeeklyDealCard({ item }) {
         </ContentCol>
         {/* image col */}
         <ImageCol span={12}>
-          <img
+          <Image
+            height={"100%"}
+            preview={false}
             src={
               require(`../../../assets/images/weeklygames/${item.image}`)
                 .default
