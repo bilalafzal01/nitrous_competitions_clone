@@ -6,6 +6,8 @@ import {
   AboutPagePara,
   CustomH2,
 } from "../../../components/Reusable/Typography";
+import charityPartners from "../../../constants/charityPartners";
+import { ICOLOR } from "../../../constants";
 
 const Root = styled.div`
   margin-top: 110px;
@@ -16,6 +18,41 @@ const CustomCol = styled(Col)`
   flex-direction: column;
   justify-content: center;
 `;
+
+const CharityCardDiv = styled.div`
+  border: 1.5px solid ${ICOLOR.lightGrayBorder};
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 102px;
+`;
+
+const MorePara = styled.div`
+  height: 102px;
+  font-family: "Poppins-SemiBold";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: ${ICOLOR.orange};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const CharitySmallCard = ({ item }) => {
+  return (
+    <CharityCardDiv>
+      <img
+        alt=""
+        src={
+          require(`../../../assets/images/charityPartners/${item.smallImage}`)
+            .default
+        }
+      />
+    </CharityCardDiv>
+  );
+};
 
 function Charities() {
   return (
@@ -34,7 +71,18 @@ function Charities() {
           </AboutPagePara>
         </CustomCol>
         {/* images */}
-        <Col span={12}></Col>
+        <Col span={12}>
+          <CustomRow gutter={[20, 20]}>
+            {charityPartners.map((item) => (
+              <Col span={8} key={item.id}>
+                <CharitySmallCard item={item} />
+              </Col>
+            ))}
+            <Col span={8}>
+              <MorePara>+More</MorePara>
+            </Col>
+          </CustomRow>
+        </Col>
       </CustomRow>
     </Root>
   );
