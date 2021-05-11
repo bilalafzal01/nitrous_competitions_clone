@@ -41,13 +41,13 @@ function AboutPage() {
                 <OurMission />
               </Col>
             </CustomRow>
+            {/* charities */}
+            <CustomRow>
+              <Col span={24}>
+                <Charities />
+              </Col>
+            </CustomRow>
           </PaddedContent>
-          {/* charities */}
-          <CustomRow>
-            <Col span={24}>
-              <Charities />
-            </Col>
-          </CustomRow>
         </Col>
       </CustomRow>
       {/* why us */}

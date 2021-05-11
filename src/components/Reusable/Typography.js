@@ -48,10 +48,9 @@ const CustomPara = styled.p`
 
 const AboutPagePara = styled.p`
   font-family: "Poppins-Regular";
-  font-size: 14px;
+  font-size: ${({ fontsize }) => (fontsize ? fontsize : "14px")};
   line-height: 22px;
   margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
-
   color: ${ICOLOR.textLightGray};
 `;
 

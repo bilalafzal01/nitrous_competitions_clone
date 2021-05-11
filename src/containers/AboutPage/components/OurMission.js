@@ -17,10 +17,6 @@ const CustomCol = styled(Col)`
   justify-content: center;
 `;
 
-const CustomAboutPara = styled(AboutPagePara)`
-  font-size: 18px;
-`;
-
 function OurMission() {
   return (
     <Root>
@@ -33,11 +29,11 @@ function OurMission() {
         </Col>
         <CustomCol xl={12}>
           <CustomH2 marginbottom="24px">Our Mission</CustomH2>
-          <CustomAboutPara>
+          <AboutPagePara fontsize="18px">
             To modernise raffles and competitions by making them easy to host
             and enter whilst at the same time providing both 100% security as
             well as complete user transparency.
-          </CustomAboutPara>
+          </AboutPagePara>
         </CustomCol>
       </CustomRow>
     </Root>
