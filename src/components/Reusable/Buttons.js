@@ -13,7 +13,7 @@ const CustomButton = styled(Button)`
   justify-content: space-evenly;
   align-items: center;
   height: 48px;
-  width: 110px;
+  width: ${({ width }) => (width ? width : "110px")};
   span {
     font-family: "Inter-Medium";
     font-weight: 500;
@@ -25,6 +25,7 @@ const CustomButton = styled(Button)`
 
   &:hover {
     cursor: pointer;
+    background-color: ${({ background }) => `${background}90`};
   }
 `;
 

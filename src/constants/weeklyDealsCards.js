@@ -6,7 +6,7 @@ const cards = [
     description: "Apple's latest macbook air in space gray",
     time: 5,
     ticketsPerEntry: 2,
-    drawType: "live",
+    drawType: "Live",
     price: 5.0,
     image: "macbook.png",
   },
