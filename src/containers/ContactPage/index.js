@@ -6,6 +6,7 @@ import TitleJumbotron from "../../components/Reusable/TitleJumbotron";
 import { CustomRow } from "../../components/Reusable/Utilities";
 import { ICOLOR } from "../../constants";
 import QuestionHelp from "./components/QuestionHelp";
+import ContactForm from "./components/ContactForm";
 
 const Root = styled.div`
   background-color: ${ICOLOR.white};
@@ -17,7 +18,7 @@ const PaddedContent = styled.div`
   padding: 132px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
 `;
 
 function ContactPage() {
@@ -44,7 +45,9 @@ function ContactPage() {
             </CustomRow>
             {/* Form */}
             <CustomRow>
-              <Col span={24}></Col>
+              <Col span={24}>
+                <ContactForm />
+              </Col>
             </CustomRow>
           </PaddedContent>
         </Col>

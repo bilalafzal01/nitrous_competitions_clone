@@ -54,4 +54,5 @@ export const ICOLOR = {
   inputDarkBG: "#1E1C1C",
   grayBackground: "#EFEFEF",
   linenBackground: "#FFF7F1",
+  placeholderColor: "#868E95",
 };
