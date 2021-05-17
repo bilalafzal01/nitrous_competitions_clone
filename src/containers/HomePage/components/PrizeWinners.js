@@ -35,6 +35,7 @@ const TopBanner = styled.div`
   font-family: "Inter-Bold";
   font-size: 23px;
   line-height: 28px;
+  text-transform: uppercase;
 `;
 
 const InfoDiv = styled.div`
