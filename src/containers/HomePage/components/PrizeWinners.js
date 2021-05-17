@@ -29,7 +29,13 @@ const PrizeWinnerDiv = styled.div`
   }
 `;
 
-const TopBanner = styled.div``;
+const TopBanner = styled.div`
+  min-height: 36px;
+  color: ${ICOLOR.white};
+  font-family: "Inter-Bold";
+  font-size: 23px;
+  line-height: 28px;
+`;
 
 const InfoDiv = styled.div`
   padding: 28px 0;
@@ -66,7 +72,9 @@ const PrizeWinnerCard = ({ item }) => {
   return (
     <PrizeWinnerDiv>
       {/* Top Banner */}
-      {/* <div className="topBanner">Winner</div> */}
+      <div className="topBanner">
+        <TopBanner>Winner</TopBanner>
+      </div>
       {/* Image */}
       <img
         src={

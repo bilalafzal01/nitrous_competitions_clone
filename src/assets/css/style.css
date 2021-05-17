@@ -117,8 +117,13 @@ select.contact {
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    /* top: -10px; */
-
+    top: -26px;
+    left: 25%;
+    width: 226px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .winnerTickerNumber {
