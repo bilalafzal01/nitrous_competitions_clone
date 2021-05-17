@@ -11,6 +11,7 @@ import { ICOLOR } from "../../../constants";
 
 const Root = styled.div`
   margin-top: 110px;
+  max-width: 1188px;
 `;
 
 const CustomCol = styled(Col)`
@@ -57,7 +58,7 @@ const CharitySmallCard = ({ item }) => {
 function Charities() {
   return (
     <Root>
-      <CustomRow>
+      <CustomRow gutter={[16, 16]}>
         {/* content */}
         <CustomCol xl={12}>
           <CustomH2 marginbottom="24px">

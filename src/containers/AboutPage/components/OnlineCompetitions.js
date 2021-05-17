@@ -9,6 +9,7 @@ import { CustomRow } from "../../../components/Reusable/Utilities";
 
 const Root = styled.div`
   margin-bottom: 110px;
+  max-width: 1188px;
 `;
 
 function OnlineCompetitions() {

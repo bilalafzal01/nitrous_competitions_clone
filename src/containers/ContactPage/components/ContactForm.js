@@ -28,6 +28,7 @@ const RightInputsWrapper = styled.div`
     border-radius: 5px;
     resize: none;
     padding: 22px;
+    min-height: 313px;
     &:hover {
       background-color: ${ICOLOR.white}90;
     }
@@ -51,16 +52,8 @@ const CustomInput = styled.div`
     }
   }
 
-  select {
-    padding: 22px;
-    margin: 10px 0 0 0;
-    background-color: ${ICOLOR.white};
-    border-radius: 5px;
-    font-family: "Poppins-Regular";
-    color: ${ICOLOR.placeholderColor};
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
+  select.contact {
+    background-color: #fff;
     &::placeholder {
       color: ${ICOLOR.placeholderColor};
     }
@@ -91,7 +84,7 @@ function ContactForm() {
             {/* Topic */}
             <CustomInput>
               <InputLabel>Topic</InputLabel>
-              <select>
+              <select className="contact">
                 <option value="Filter">Filter</option>
               </select>
             </CustomInput>

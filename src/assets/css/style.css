@@ -83,8 +83,25 @@ select {
     background-position: 100%;
     outline: none;
     cursor: pointer;
-
 }
+
+select.contact {
+    padding: 22px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    font-family: "Poppins-Regular";
+    color: #868E95;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../../assets/images/icons/dropdownArrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+
 
 /* *    Home page MAIN div  */
 .homeMain {

@@ -15,6 +15,9 @@ const Root = styled.div``;
 const PaddedContent = styled.div`
   padding: 100px 290px;
   background-color: ${ICOLOR.white};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 function AboutPage() {
