@@ -17,7 +17,9 @@ const TitleDiv = styled.div`
 `;
 
 const CardRoot = styled.div`
-  background-color: ${ICOLOR.white};
+  background-image: url(${(props) => props.img});
+  background-size: 100%;
+  background-repeat: no-repeat;
   padding: 46px 24px;
   border-radius: 50px;
   height: 340px;
@@ -38,7 +40,12 @@ const CardBody = styled.div`
 
 const HowItWorksCard = ({ item }) => {
   return (
-    <CardRoot>
+    <CardRoot
+      img={
+        require(`../../../assets/images/icons/howItWorks${item.bgImageIndex}.png`)
+          .default
+      }
+    >
       <CardBody>
         <img
           alt=""
