@@ -9,6 +9,7 @@ import Charities from "./components/Charities";
 import OnlineCompetitions from "./components/OnlineCompetitions";
 import OurMission from "./components/OurMission";
 import WhyUs from "./components/WhyUs";
+import ReviewsDiv from "../HomePage/components/ReviewsDiv";
 
 const Root = styled.div``;
 
@@ -65,7 +66,9 @@ function AboutPage() {
       </CustomRow>
       {/* dont take our word for it */}
       <CustomRow>
-        <Col span={24}></Col>
+        <Col span={24}>
+          <ReviewsDiv />
+        </Col>
       </CustomRow>
     </Root>
   );

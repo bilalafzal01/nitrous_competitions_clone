@@ -6,6 +6,7 @@ import CharityPartners from "./components/CharityPartners";
 import HomeJumbotron from "./components/HomeJumbotron";
 import HowItWorks from "./components/HowItWorks";
 import PrizeWinners from "./components/PrizeWinners";
+import ReviewsDiv from "./components/ReviewsDiv";
 import WeeklyGames from "./components/WeeklyGames";
 
 const Root = styled.div``;
@@ -45,7 +46,9 @@ function HomePage() {
       </CustomRow>
       {/* Reviews */}
       <CustomRow>
-        <Col span={24}></Col>
+        <Col span={24}>
+          <ReviewsDiv />
+        </Col>
       </CustomRow>
     </Root>
   );
